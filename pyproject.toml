@@ -1,0 +1,16 @@
+[project]
+name = "odoo20-check"
+version = "0.1.0"
+description = "Report what breaks when an Odoo module moves to Odoo 20"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+keywords = ["odoo", "odoo20", "migration", "upgrade", "static-analysis"]
+classifiers = ["Programming Language :: Python :: 3", "License :: OSI Approved :: MIT License"]
+
+[project.scripts]
+odoo20-check = "odoo20check.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
